@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="StrongerDWB — DALTONMARTIN 2nd Generation EV">
-  <title>StrongerDWB | DALTONMARTIN</title>
+  <meta name="description" content="DTG-Volante — DaltonMartin 1st Generation EV. Where it all began.">
+  <title>DTG-Volante | DaltonMartin</title>
   <link rel="stylesheet" href="vehicle-detail.css">
 </head>
-<body class="flip-hero">
+<body>
 
   <!-- ── Top Bar (overlays hero, like AM) ── -->
   <header class="top-bar" id="topbar">
-    <a href="index.html" class="logo">DALTONMARTIN</a>
+    <a href="index.html" class="logo">DaltonMartin</a>
     <div class="top-bar-right">
       <a href="index.html#about">ABOUT</a>
       <a href="index.html#vehicle">VEHICLE</a>
@@ -35,20 +35,19 @@
 
   <!-- ═══════════════════════════════════════
        HERO — full-bleed background image
-       text bottom-left, like Aston Martin
   ═══════════════════════════════════════ -->
   <section class="hero">
     <div class="hero-bg">
-      <img src="./img/top.jpg" alt="StrongerDWB">
+      <img src="./img/DTGvolante.jpg" alt="DTG-Volante">
     </div>
     <div class="hero-content">
-      <p class="hero-tagline">POWER. REDEFINED.</p>
+      <p class="hero-tagline">WHERE IT ALL BEGAN.</p>
       <h1 class="hero-title">
-        <span class="model-switch">StrongerDWB</span>
+        <span class="model-switch">DTG-Volante</span>
       </h1>
       <div class="hero-buttons">
         <a href="#specs" class="hero-btn-primary">SPECIFICATIONS</a>
-        <a href="#engineering" class="hero-btn-secondary">ENGINEERING</a>
+        <a href="#heritage" class="hero-btn-secondary">HERITAGE</a>
       </div>
     </div>
   </section>
@@ -56,8 +55,8 @@
   <!-- ── Section Nav (sticky, like AM sub-nav) ── -->
   <nav class="section-nav" id="section-nav">
     <a href="#specs" class="active">PERFORMANCE</a>
+    <a href="#heritage">HERITAGE</a>
     <a href="#engineering">ENGINEERING</a>
-    <a href="#overview">OVERVIEW</a>
     <a href="#full-specs">SPECIFICATIONS</a>
   </nav>
 
@@ -67,7 +66,7 @@
   <section class="perf" id="specs">
     <div class="perf-grid">
       <div class="perf-item">
-        <p class="perf-value"><span class="count-up" data-target="25"></span><span class="perf-unit">V</span></p>
+        <p class="perf-value"><span class="count-up" data-target="24"></span><span class="perf-unit">V</span></p>
         <p class="perf-label">SYSTEM VOLTAGE</p>
       </div>
       <div class="perf-item">
@@ -75,7 +74,7 @@
         <p class="perf-label">RATED POWER</p>
       </div>
       <div class="perf-item">
-        <p class="perf-value"><span class="count-up" data-target="25"></span><span class="perf-unit">km/h</span></p>
+        <p class="perf-value"><span class="count-up" data-target="20"></span><span class="perf-unit">km/h</span></p>
         <p class="perf-label">TOP SPEED</p>
       </div>
     </div>
@@ -85,64 +84,65 @@
   </section>
 
   <!-- ═══════════════════════════════════════
+       HERITAGE — 原点の物語
+  ═══════════════════════════════════════ -->
+  <section class="dark-section" id="heritage">
+    <div class="dark-section-inner">
+      <p class="dark-section-label">HERITAGE</p>
+      <h2 class="dark-section-heading">すべては、この一台から始まった。</h2>
+      <div class="dark-section-text">
+        <p>DTG-Volanteは、DaltonMartinの原点にして出発点。予算も経験も限られたなかで、「自分たちの手でEVをつくる」という衝動だけを頼りに生まれた初号機です。</p>
+        <p>洗練とは程遠い。速くもない。しかし、このマシンに注がれた試行錯誤のすべてが、いまの私たちの礎になっています。</p>
+        <p>完璧ではないからこそ、この一台には語り尽くせない価値がある。DTG-Volanteは、私たちが何者であるかを証明する、最初の一歩です。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
        ENGINEERING — hero image + tile grid
   ═══════════════════════════════════════ -->
   <section id="engineering">
     <div class="eng-hero">
       <div class="eng-hero-bg">
-        <img src="./img/DWB.png" alt="StrongerDWB Engineering">
+        <img src="./img/DTGvolante.jpg" alt="DTG-Volante Engineering">
       </div>
       <div class="eng-hero-content">
         <p class="eng-hero-label">ENGINEERING</p>
-        <h2 class="eng-hero-heading">すべてを、再設計した。<br>妥協なき進化。</h2>
+        <h2 class="eng-hero-heading">原点の設計思想。<br>制約が生んだ独創。</h2>
       </div>
     </div>
     <div class="eng-tiles">
       <div class="eng-tile-grid">
         <div class="eng-tile">
           <h3 class="eng-tile-title">フレーム</h3>
-          <p class="eng-tile-desc">高剛性スチールスペースフレームを採用。応力解析に基づく最適化により、軽量性と構造強度を両立。</p>
-          <span class="eng-tile-more">LEARN MORE</span>
-        </div>
-        <div class="eng-tile">
-          <h3 class="eng-tile-title">サスペンション</h3>
-          <p class="eng-tile-desc">独立懸架サスペンションを搭載。路面追従性を飛躍的に向上させ、安定した走行を実現。</p>
-          <span class="eng-tile-more">LEARN MORE</span>
-        </div>
-        <div class="eng-tile">
-          <h3 class="eng-tile-title">水冷機構</h3>
-          <p class="eng-tile-desc">モーターコントローラの水冷冷却システムを自社設計。連続走行時も安定したパフォーマンスを維持。</p>
+          <p class="eng-tile-desc">限られた資材から組み上げたスチールフレーム。初めての溶接、初めての設計図。すべてがここから始まった。</p>
           <span class="eng-tile-more">LEARN MORE</span>
         </div>
         <div class="eng-tile">
           <h3 class="eng-tile-title">ドライブトレイン</h3>
-          <p class="eng-tile-desc">高トルクBLDCモーターとチェーン駆動による後輪駆動。レスポンスと効率を最大化。</p>
+          <p class="eng-tile-desc">ハブモーターによるシンプルな後輪駆動。複雑な機構を排し、確実に動くことを最優先にした設計。</p>
           <span class="eng-tile-more">LEARN MORE</span>
         </div>
         <div class="eng-tile">
           <h3 class="eng-tile-title">バッテリー</h3>
-          <p class="eng-tile-desc">マキタ製18vバッテリーと鉛蓄電池の互換性を担保。レース用途と日常使用の双方での最適化。</p>
+          <p class="eng-tile-desc">鉛蓄電池による24Vシステム。コストと入手性を重視した現実的な選択が、初号機の走行を支えた。</p>
           <span class="eng-tile-more">LEARN MORE</span>
         </div>
         <div class="eng-tile">
-          <h3 class="eng-tile-title">電装・制御</h3>
-          <p class="eng-tile-desc">BLDC用車両制御ユニットを内製。速度制御、安全インターロックを統合。</p>
+          <h3 class="eng-tile-title">ステアリング</h3>
+          <p class="eng-tile-desc">自転車のステアリング機構を流用。操舵感の追求よりも「曲がれること」を目標に、フレームとのマッチ度を高めるため検討を重ねた。</p>
           <span class="eng-tile-more">LEARN MORE</span>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════
-       OVERVIEW
-  ═══════════════════════════════════════ -->
-  <section class="dark-section" id="overview">
-    <div class="dark-section-inner">
-      <p class="dark-section-label">OVERVIEW</p>
-      <h2 class="dark-section-heading">初号機の限界を超えるために<br>生まれた2代目。</h2>
-      <div class="dark-section-text">
-        <p>StrongerDWBは、初号機DTG-Volanteで得た知見を凝縮し、フレーム・サスペンション・冷却機構のすべてを一から設計し直した2代目車両です。</p>
-        <p>「より強く、より安定して、より速く。」——妥協のないエンジニアリングが、このマシンのすべてに宿っています。</p>
+        <div class="eng-tile">
+          <h3 class="eng-tile-title">ブレーキ</h3>
+          <p class="eng-tile-desc">リムブレーキによる制動系。安全性の確保という最も基本的な課題に、正面から取り組んだ。</p>
+          <span class="eng-tile-more">LEARN MORE</span>
+        </div>
+        <div class="eng-tile">
+          <h3 class="eng-tile-title">電装系</h3>
+          <p class="eng-tile-desc">最小限の配線で構成された電装。回路設計の基礎を学びながら、一本一本を手作業で敷設した。</p>
+          <span class="eng-tile-more">LEARN MORE</span>
+        </div>
       </div>
     </div>
   </section>
@@ -171,7 +171,7 @@
         </div>
         <div class="spec-row">
           <span class="spec-row-label">コントローラ</span>
-          <span class="spec-row-value">水冷式 BLDC コントローラ</span>
+          <span class="spec-row-value">汎用 BLDC コントローラ</span>
         </div>
       </div>
 
@@ -183,7 +183,7 @@
         </div>
         <div class="spec-row">
           <span class="spec-row-label">バッテリー種類</span>
-          <span class="spec-row-value">リチウムイオン・VRLA</span>
+          <span class="spec-row-value">鉛蓄電池 (VRLA)</span>
         </div>
       </div>
 
@@ -195,11 +195,7 @@
         </div>
         <div class="spec-row">
           <span class="spec-row-label">サスペンション</span>
-          <span class="spec-row-value">独立懸架式</span>
-        </div>
-        <div class="spec-row">
-          <span class="spec-row-label">車両重量</span>
-          <span class="spec-row-value">約 40 kg</span>
+          <span class="spec-row-value">Flex</span>
         </div>
         <div class="spec-row">
           <span class="spec-row-label">最高速度</span>
@@ -207,8 +203,22 @@
         </div>
         <div class="spec-row">
           <span class="spec-row-label">ブレーキ</span>
-          <span class="spec-row-value">リムブレーキ</span>
+          <span class="spec-row-value">Vブレーキ</span>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       LEGACY — StrongerDWBへの架け橋
+  ═══════════════════════════════════════ -->
+  <section class="dark-section">
+    <div class="dark-section-inner">
+      <p class="dark-section-label">LEGACY</p>
+      <h2 class="dark-section-heading">この一台が遺したもの。</h2>
+      <div class="dark-section-text">
+        <p>DTG-Volanteで得た教訓——フレーム剛性の重要性、熱対策の必要性、サスペンションの価値——そのすべてが、2代目StrongerDWBの設計に直接活かされています。</p>
+        <p>初号機なくして、いまの私たちは存在しない。DTG-Volanteは引退しましたが、そのDNAはすべての後継機に受け継がれています。</p>
       </div>
     </div>
   </section>
@@ -218,6 +228,11 @@
   ═══════════════════════════════════════ -->
   <section class="bottom-grid">
     <div class="bottom-grid-inner">
+      <a href="vehicle-dwb.html" class="bottom-card">
+        <p class="bottom-card-label">NEXT GENERATION</p>
+        <h3 class="bottom-card-title">StrongerDWBを見る</h3>
+        <span class="bottom-card-cta">VIEW DETAILS &rarr;</span>
+      </a>
       <a href="index.html#vehicle" class="bottom-card">
         <p class="bottom-card-label">ALL VEHICLES</p>
         <h3 class="bottom-card-title">車両一覧を見る</h3>
@@ -225,13 +240,8 @@
       </a>
       <a href="index.html#about" class="bottom-card">
         <p class="bottom-card-label">ABOUT US</p>
-        <h3 class="bottom-card-title">DALTONMARTINについて</h3>
+        <h3 class="bottom-card-title">DaltonMartinについて</h3>
         <span class="bottom-card-cta">LEARN MORE &rarr;</span>
-      </a>
-      <a href="index.html#team" class="bottom-card">
-        <p class="bottom-card-label">TEAM</p>
-        <h3 class="bottom-card-title">チーム構成</h3>
-        <span class="bottom-card-cta">VIEW TEAM &rarr;</span>
       </a>
       <a href="index.html#news" class="bottom-card">
         <p class="bottom-card-label">NEWS</p>
@@ -244,8 +254,8 @@
   <!-- ── Footer ── -->
   <footer class="vd-footer">
     <div>
-      <span class="logo">DALTONMARTIN</span>
-      <p class="copyright">&copy; 2026 DALTONMARTIN. All rights reserved.</p>
+      <span class="logo">DaltonMartin</span>
+      <p class="copyright">&copy; 2026 DaltonMartin. All rights reserved.</p>
     </div>
     <a href="index.html" class="back-link">BACK TO HOME</a>
   </footer>
@@ -258,12 +268,11 @@
       if (!heroBg || !hero) return;
 
       let ticking = false;
-      const SPEED = 0.35; // 0 = fixed, 1 = normal scroll
+      const SPEED = 0.35;
 
       function updateParallax() {
         const scrollY = window.pageYOffset;
         const heroH = hero.offsetHeight;
-        // Only apply while hero is in view
         if (scrollY <= heroH) {
           heroBg.style.transform = 'translate3d(0,' + (scrollY * SPEED) + 'px,0)';
         }
@@ -331,7 +340,6 @@
           function tick(now) {
             const elapsed = now - start;
             const progress = Math.min(elapsed / duration, 1);
-            // ease-out cubic
             const eased = 1 - Math.pow(1 - progress, 3);
             el.textContent = Math.round(eased * target);
             if (progress < 1) requestAnimationFrame(tick);
