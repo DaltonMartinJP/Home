@@ -403,7 +403,8 @@ nav a:hover::after {
 /* ── News ── */
 .news {
   padding: 120px clamp(24px, 8vw, 120px);
-  background: #fff;
+  background: #111;
+  color: #fff;
 }
 
 .news-inner {
@@ -411,52 +412,78 @@ nav a:hover::after {
   margin: 0 auto;
 }
 
+.news .section-label {
+  color: #666;
+}
+
+.news .section-heading {
+  color: #fff;
+}
+
+.news .section-line {
+  background: #333;
+}
+
 .news-list {
   list-style: none;
   margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
 .news-item {
-  border-bottom: 1px solid #eee;
+  background: #1a1a1a;
+  transition: background 0.2s;
 }
 
-.news-item:first-child {
-  border-top: 1px solid #eee;
+.news-item:hover {
+  background: #222;
 }
 
 .news-item a {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 24px;
-  padding: 24px 0;
+  padding: 28px 32px;
   text-decoration: none;
-  color: #111;
-  transition: opacity 0.3s ease;
-}
-
-.news-item a:hover {
-  opacity: 0.6;
+  color: #fff;
 }
 
 .news-date {
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-  color: #999;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: #666;
   flex-shrink: 0;
   min-width: 100px;
 }
 
 .news-tag {
-  font-size: 0.6rem;
-  letter-spacing: 0.15em;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
   padding: 4px 12px;
-  border: 1px solid #ddd;
+  border: 1px solid #444;
+  color: #aaa;
   flex-shrink: 0;
 }
 
 .news-title {
   font-size: 0.9rem;
   line-height: 1.6;
+  flex: 1;
+}
+
+.news-item-arrow {
+  font-size: 0.8rem;
+  color: #555;
+  flex-shrink: 0;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.news-item:hover .news-item-arrow {
+  transform: translateX(4px);
+  color: #fff;
 }
 
 /* ── Team ── */
@@ -701,10 +728,15 @@ footer {
   .news-item a {
     flex-wrap: wrap;
     gap: 8px 16px;
+    padding: 20px 20px;
   }
 
   .news-title {
     width: 100%;
+  }
+
+  .news-item-arrow {
+    display: none;
   }
 
   .role-grid {

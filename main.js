@@ -10,6 +10,7 @@ if (typeof NEWS_DATA !== 'undefined' && newsList) {
     `<span class="news-date">${item.date}</span>` +
     `<span class="news-tag">${item.tag}</span>` +
     `<span class="news-title">${item.title}</span>` +
+    `<span class="news-item-arrow">→</span>` +
     `</a></li>`
   ).join('');
 }
