@@ -25,7 +25,7 @@ const NEWS_DATA = [
     date: "2026.03.25",
     tag: "INFO",
     title: "新入生向け説明会概要を公開しました。",
-    url: "orientation.html",
+    url: "content/orientation.html",
   },
 ];
 
