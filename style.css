@@ -535,90 +535,100 @@ nav a:hover::after {
   line-height: 1.8;
 }
 
-/* Total Members Display */
-.team-total {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  margin-bottom: 16px;
-  gap: 8px;
+/* Team Header */
+.team-header {
+  text-align: center;
+  margin-bottom: 24px;
 }
 
-.total-number {
-  font-size: 3.2rem;
+.team-total-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.team-total-number {
+  font-size: 4rem;
   font-weight: 900;
   color: #111;
 }
 
-.total-label {
-  font-size: 1.2rem;
-  color: #666;
-  margin-bottom: 8px;
+.team-total-unit {
+  font-size: 1.4rem;
+  margin-left: 8px;
+  font-weight: 600;
+  vertical-align: middle;
 }
 
-.total-divider {
+.team-divider {
   height: 1px;
-  background: linear-gradient(to right, transparent, #ddd, transparent);
-  margin: 32px 0 40px;
+  background: linear-gradient(to right, transparent, #ddd 20%, #ddd 80%, transparent);
+  margin: 40px 0 48px;
 }
 
-/* Department Breakdown */
-.departments {
+/* Team Cards Grid */
+.team-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.team-card {
+  border: 1px solid #e0e0e0;
+  padding: 28px 24px;
   display: flex;
   flex-direction: column;
-  gap: 28px;
-  margin-bottom: 24px;
+  transition: all 0.3s ease;
 }
 
-.dept-item {
-  display: flex;
-  align-items: center;
-  gap: 16px;
+.team-card:hover {
+  border-color: #111;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
 }
 
-.dept-bar {
-  flex: 1;
-  height: 6px;
-  background: #f0f0f0;
-  border-radius: 3px;
-  overflow: hidden;
-  min-width: 120px;
-}
-
-.dept-bar-fill {
-  height: 100%;
-  background: #111;
-  border-radius: 3px;
-}
-
-.dept-bar-1 { width: 93.3%; }
-.dept-bar-2 { width: 20%; }
-.dept-bar-3 { width: 13.3%; }
-.dept-bar-4 { width: 13.3%; }
-
-.dept-info {
-  min-width: 140px;
-  text-align: right;
-}
-
-.dept-name {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #111;
-  margin-bottom: 4px;
-}
-
-.dept-count {
-  font-size: 1.1rem;
+.card-name {
+  font-size: 0.95rem;
   font-weight: 700;
   color: #111;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.card-desc {
+  font-size: 0.78rem;
+  color: #777;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.card-count {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #111;
+  text-align: right;
+  line-height: 1;
+  position: relative;
+}
+
+.card-unit {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #777;
+  vertical-align: bottom;
+  margin-left: 2px;
+  line-height: 1;
 }
 
 .team-note {
   font-size: 0.75rem;
   color: #999;
   text-align: center;
-  margin-top: 8px;
+  margin-top: 12px;
 }
 
 /* ── Footer ── */
@@ -866,17 +876,15 @@ footer {
   }
 
   /* Team section mobile adjustments */
-  .total-number {
-    font-size: 2.4rem;
+  .team-total-number {
+    font-size: 2.8rem;
   }
 
-  .dept-item {
-    flex-direction: column;
-    align-items: flex-start;
+  .team-cards {
+    grid-template-columns: 1fr;
   }
 
-  .dept-info {
-    min-width: auto;
-    text-align: left;
+  .team-card {
+    padding: 24px 20px;
   }
 }

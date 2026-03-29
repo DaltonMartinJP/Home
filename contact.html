@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="DALTONMARTIN CONTACT — 電気自動車自作プロジェクトへの参加を検討している方へ">
+  <title>CONTACT | DALTONMARTIN</title>
+  <!-- OGP -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="DALTONMARTIN">
+  <meta property="og:title" content="CONTACT | DALTONMARTIN">
+  <meta property="og:description" content="CONTACT">
+  <meta property="og:url" content="https://daltonmartinjp.github.io/Home/content/orientation.html">
+  <meta property="og:image" content="https://daltonmartinjp.github.io/Home/img/event_top.JPG">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CONTACT | DALTONMARTIN">
+  <meta name="twitter:description" content="CONTACT">
+  <meta name="twitter:image" content="https://daltonmartinjp.github.io/Home/img/event_top.JPG">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./content/orientation.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="./index.html" class="logo">DALTONMARTIN</a>
+    <nav>
+      <a href="./index.html#about">ABOUT</a>
+      <a href="./index.html#vehicle">VEHICLE</a>
+      <a href="./index.html#news">NEWS</a>
+      <a href="./index.html#team">TEAM</a>
+    </nav>
+    <button class="menu-toggle" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="./index.html">HOME</a>
+    <a href="./index.html#about">ABOUT</a>
+    <a href="./index.html#vehicle">VEHICLE</a>
+    <a href="./index.html#news">NEWS</a>
+    <a href="./index.html#team">TEAM</a>
+  </div>
+
+  <!-- Back -->
+  <div class="back-bar">
+    <a href="./index.html#news">NEWS に戻る</a>
+  </div>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <p class="page-hero-label">CONTACT</p>
+    <h1 class="page-hero-title">連絡先情報</h1>
+    <p class="page-hero-sub">ご不明点・ご質問などはTeamsよりご連絡ください。<br>代表連絡先: 220104 渡辺尚哉</p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer">
+    <span class="logo">DALTONMARTIN</span>
+    <p class="copyright">&copy; 2026 DALTONMARTIN. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const menuBtn = document.querySelector('.menu-toggle');
+    const mobileNav = document.querySelector('.mobile-nav');
+    menuBtn.addEventListener('click', () => {
+      menuBtn.classList.toggle('active');
+      mobileNav.classList.toggle('open');
+    });
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menuBtn.classList.remove('active');
+        mobileNav.classList.remove('open');
+      });
+    });
+  </script>
+
+</body>
+</html>
