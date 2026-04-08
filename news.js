@@ -28,7 +28,7 @@ const NEWS_DATA = [
     url: "content/orientation.html",
   },
   {
-    date: "2026.04.8",
+    date: "2026.04.08",
     tag: "INFO",
     title: "チームロゴが決定しました。",
     url: "#",
