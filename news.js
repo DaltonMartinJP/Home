@@ -27,5 +27,11 @@ const NEWS_DATA = [
     title: "新入生向け説明会概要を公開しました。",
     url: "content/orientation.html",
   },
+  {
+    date: "2026.04.8",
+    tag: "INFO",
+    title: "チームロゴが決定しました。",
+    url: "#",
+  },
 ];
 
