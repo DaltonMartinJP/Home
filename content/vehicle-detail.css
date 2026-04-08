@@ -33,6 +33,10 @@ body {
   -webkit-backdrop-filter: blur(16px);
 }
 
+.top-bar--dark {
+  background: rgba(0, 0, 0, 0.85);
+}
+
 .top-bar .logo {
   font-weight: 900;
   font-size: 1rem;
@@ -417,7 +421,6 @@ body.flip-hero .hero-bg img { transform: scaleX(-1); }
   position: relative;
   background: #111;
   padding: 48px 32px;
-  min-height: 240px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
