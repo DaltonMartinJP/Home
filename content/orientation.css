@@ -1,15 +1,18 @@
 /* ── Page-specific styles: Orientation ── */
 
 .page-hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
   padding-top: 120px;
   padding-bottom: 80px;
   padding-left: clamp(24px, 8vw, 160px);
   padding-right: clamp(24px, 8vw, 160px);
   border-bottom: 1px solid #eee;
   height: 100vh;
+}
+
+.page-hero--two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .page-hero-text {
@@ -321,7 +324,7 @@
 }
 
 @media (max-width: 768px) {
-  .page-hero {
+  .page-hero--two-col {
     grid-template-columns: 1fr;
   }
 
