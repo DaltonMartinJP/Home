@@ -155,7 +155,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center bottom;
+  object-position: left bottom;
 }
 
 /* Page-specific hero tweaks via body class */
