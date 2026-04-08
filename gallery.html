@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="DALTONMARTIN GALLERY — 電気自動車自作プロジェクトのフォトギャラリー">
+  <title>GALLERY | DALTONMARTIN</title>
+  <!-- OGP -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="DALTONMARTIN">
+  <meta property="og:title" content="GALLERY | DALTONMARTIN">
+  <meta property="og:description" content="DALTONMARTIN フォトギャラリー">
+  <meta property="og:url" content="https://daltonmartinjp.github.io/Home/gallery.html">
+  <meta property="og:image" content="https://daltonmartinjp.github.io/Home/img/top.jpg">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GALLERY | DALTONMARTIN">
+  <meta name="twitter:description" content="DALTONMARTIN フォトギャラリー">
+  <meta name="twitter:image" content="https://daltonmartinjp.github.io/Home/img/top.jpg">
+  <link rel="icon" type="image/x-icon" href="img/icon.ico">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H5BPJGXWQD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-H5BPJGXWQD');
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo"><img src="img/logo.png" alt="DaltonMartin" style="height: 40px; width: auto; object-fit: contain;"></a>
+    <nav>
+      <a href="index.html#about">ABOUT</a>
+      <a href="index.html#vehicle">VEHICLE</a>
+      <a href="index.html#news">NEWS</a>
+      <a href="index.html#team">TEAM</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+    <button class="menu-toggle" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html">HOME</a>
+    <a href="index.html#about">ABOUT</a>
+    <a href="index.html#vehicle">VEHICLE</a>
+    <a href="index.html#news">NEWS</a>
+    <a href="index.html#team">TEAM</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+
+  <!-- Page Hero -->
+  <div class="gallery-hero">
+    <p class="gallery-hero-label">GALLERY</p>
+    <h1 class="gallery-hero-title">PHOTO<br>GALLERY</h1>
+  </div>
+
+  <!-- Gallery Grid -->
+  <section class="gallery-section">
+    <div class="gallery-grid">
+
+      <figure class="gallery-item">
+        <img src="img/top.jpg" alt="DaltonMartin トップ画像">
+        <figcaption>
+          <p class="gallery-caption-copy">&copy; DaltonMartin</p>
+          <p class="gallery-caption-author">撮影: Narai</p>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="img/DWB.png" alt="StrongerDWB">
+        <figcaption>
+          <p class="gallery-caption-copy">&copy; DaltonMartin</p>
+          <p class="gallery-caption-author">撮影: Watanabe</p>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="img/DTGvolante.jpg" alt="DTG-Volante">
+        <figcaption>
+          <p class="gallery-caption-copy">&copy; DaltonMartin</p>
+          <p class="gallery-caption-author">撮影: Yoshida</p>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="img/event_top.JPG" alt="グラインダー">
+        <figcaption>
+          <p class="gallery-caption-copy">&copy; DaltonMartin</p>
+          <p class="gallery-caption-author">撮影: Watanabe</p>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item gallery-item--logo">
+        <img src="img/logo.png" alt="DaltonMartin ロゴ">
+        <figcaption>
+          <p class="gallery-caption-copy">&copy; DaltonMartin</p>
+          <p class="gallery-caption-author">作成: Ichieda</p>
+        </figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-left">
+      <span class="logo">DaltonMartin</span>
+      <p class="copyright">&copy; 2026 DaltonMartin. All rights reserved.</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">HOME</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="content/orientation.html">新年度説明会</a>
+      <a href="content/vehicle-dwb.html">StrongerDWB</a>
+      <a href="content/vehicle-dtg-volante.html">DTG-Volante</a>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.querySelector('.menu-toggle');
+    const mobileNav = document.querySelector('.mobile-nav');
+    menuBtn.addEventListener('click', () => {
+      menuBtn.classList.toggle('active');
+      mobileNav.classList.toggle('open');
+    });
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menuBtn.classList.remove('active');
+        mobileNav.classList.remove('open');
+      });
+    });
+  </script>
+
+</body>
+</html>

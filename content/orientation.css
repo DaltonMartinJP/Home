@@ -323,6 +323,25 @@
   letter-spacing: 0.05em;
 }
 
+.footer-page-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  justify-content: flex-end;
+}
+
+.footer-page-links a {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-page-links a:hover {
+  color: #111;
+}
+
 @media (max-width: 768px) {
   .page-hero--two-col {
     grid-template-columns: 1fr;

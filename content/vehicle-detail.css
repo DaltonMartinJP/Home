@@ -627,12 +627,18 @@ body.flip-hero .hero-bg img { transform: scaleX(-1); }
   text-decoration: none;
   display: inline-flex;
   align-items: center;
+  line-height: 1;
   gap: 8px;
   transition: color 0.3s;
 }
 
 .back-link:hover { color: #fff; }
-.back-link::before { content: '\2190'; font-size: 1rem; }
+.back-link::before { content: none; }
+
+.vd-footer .back-link[href*="orientation.html"] {
+  position: relative;
+  top: -1px;
+}
 
 /* ── Keyframes ── */
 @keyframes fadeUp {

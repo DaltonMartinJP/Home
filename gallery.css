@@ -1,0 +1,81 @@
+/* ================================================
+ *  DALTONMARTIN — Gallery Page
+ * ================================================ */
+
+/* ── Page Hero ── */
+.gallery-hero {
+  padding: 120px clamp(24px, 8vw, 160px) 80px;
+  border-bottom: 1px solid #eee;
+}
+
+.gallery-hero-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.gallery-hero-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+/* ── Gallery Grid ── */
+.gallery-section {
+  padding: clamp(40px, 6vw, 80px) clamp(24px, 8vw, 160px);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+}
+
+/* ── Gallery Item ── */
+.gallery-item {
+  margin: 0;
+  background: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+/* ロゴ専用 */
+.gallery-item--logo img {
+  object-fit: contain;
+  background: #f0f0f0;
+  padding: 32px;
+}
+
+/* ── Figcaption ── */
+.gallery-item figcaption {
+  padding: 16px 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.gallery-caption-copy {
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: #999;
+}
+
+.gallery-caption-author {
+  font-size: 0.75rem;
+  color: #555;
+  margin-top: 4px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
