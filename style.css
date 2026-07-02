@@ -673,8 +673,10 @@ footer {
   color: #fff;
   padding: 60px clamp(24px, 8vw, 120px);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 24px;
 }
 
 .footer-left .logo {
@@ -703,6 +705,23 @@ footer {
 }
 
 .footer-links a:hover {
+  color: #fff;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-social a {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: #888;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
   color: #fff;
 }
 
